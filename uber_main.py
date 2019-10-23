@@ -2,8 +2,8 @@ import driver_class as driver
 import numpy as np
 
 # Bring in all the data needed to execute the orders
-weights = np.genfromtxt("/Users/spencerseliga/Desktop/newnetwork.csv", delimiter=',')
-wait_list = np.genfromtxt("/Users/spencerseliga/Desktop/newrequests.csv", delimiter=',', dtype=int)
+weights = np.genfromtxt("/newnetwork.csv", delimiter=',')
+wait_list = np.genfromtxt("/newrequests.csv", delimiter=',', dtype=int)
 
 #This function is used to delete an order from the existing queue
 def delete_order(queue, order):
